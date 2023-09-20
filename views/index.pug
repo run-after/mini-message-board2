@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  a(href='/new') Create message
   ul 
     each val in messages 
       h3= val.user + " at " + val.added + " says:"
